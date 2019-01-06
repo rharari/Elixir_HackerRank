@@ -1,6 +1,6 @@
 # @author: Ricardo A Harari - ricardo.harari@gmail.com
 # https://www.hackerrank.com/challenges/cavity-map
-# hacker hank - Cavity Map
+# hackerrank - Cavity Map
 
 defmodule E1 do
   def main() do
