@@ -4,7 +4,7 @@
 
 defmodule E1 do
   def main() do
-    read(IO.gets("") |> String.strip |> String.to_integer)
+    read(IO.gets("") |> String.trim |> String.to_integer)
   end
 
   def read(1) do IO.write IO.gets("") end

@@ -7,7 +7,7 @@ defmodule AcmIcpcTeam do
   iex(1)> AcmIcpcTeam.run()
   """
 
-use Bitwise
+  use Bitwise
 
   def run do
     load()
