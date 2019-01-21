@@ -19,6 +19,7 @@ defmodule LadyBug do
   end
   def read_keyboard(), do: IO.gets("") |> Integer.parse() |> elem(0)
 
+  defp check_sequence([], _, 1), do: IO.puts("NO")
   defp check_sequence([], _, _), do: IO.puts("YES")
   defp check_sequence([h|t], nil, qtd), do: check_sequence(t, h, qtd + 1)
   defp check_sequence([h|t], h, qtd), do: check_sequence(t, h, qtd + 1)
