@@ -4,9 +4,7 @@ defmodule AlmostSorted do
   @author: ricardo alberto harari - ricardo.harari@gmail.com
   https://www.hackerrank.com/challenges/almost-sorted/problem
 
-    c("almost_sorted.ex")
-
-  AlmostSorted.run()
+  iex(1)> AlmostSorted.run()
   """
 
   def run() do
