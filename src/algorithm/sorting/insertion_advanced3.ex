@@ -24,7 +24,7 @@ defmodule InsertionAdvanced3 do
   end
 
   defp find(h0, [h1|t1], tnew, acc) when h0 == h1 do
-    {acc, tnew ++ t1 |> IO.inspect}
+    {acc, tnew ++ t1}
   end
   defp find(h0, [h1|t1], tnew, acc) do
     find(h0, t1, tnew ++ [h1], acc + 1)
