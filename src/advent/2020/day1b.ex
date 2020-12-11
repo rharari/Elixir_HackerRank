@@ -8,7 +8,6 @@ defmodule Advent.Day1b do
   def find(lst) when length(lst) < 3, do: {:error, "not found"}
   def find([first,second|tail]) do
     {lst,[last]} = Enum.split(tail, length(tail) - 1)
-    IO.inspect "#{first} , #{second}, .... #{last}   --> #{first + second + last}"
     find(first, second, last, lst, tail)
   end
 
