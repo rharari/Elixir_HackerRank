@@ -1,6 +1,6 @@
 defmodule Advent.Day10 do
 
-  def start(part \\ :part1, file \\ "/tmp/input2.txt"), do:
+  def start(part \\ :part1, file \\ "/tmp/input.txt"), do:
     File.read!(file)
     |> String.split()
     |> Enum.map(&String.to_integer/1)
@@ -14,9 +14,9 @@ defmodule Advent.Day10 do
     |> print()
 
   defp execute(lst, :part2) do
-    (lst ++ [List.last(lst) + 3])
+    lst
     |> Enum.reduce(%{0 => 1}, fn o, acc -> acc |> Map.put(o, 0) |> update(o, -3) |> update(o, -2) |> update(o, -1) end)
-    |> print(List.last(lst) + 3)
+    |> print(List.last(lst))
   end
 
   def update(acc, v, delta) do
