@@ -5,7 +5,7 @@ defmodule Advent.Day5 do
 
   def start(part, file \\ "/tmp/input.txt")
   def start(:part1, file), do:
-    File.stream!(flie)
+    File.stream!(file)
     |> Enum.reduce(0, fn o, acc -> max(acc, find_seat_id(to_charlist(o), @rows, @cols)) end)
 
   def start(:part2, file), do:
