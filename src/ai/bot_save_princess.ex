@@ -4,7 +4,6 @@ defmodule BotSavePrincess do
     @author: ricardo alberto harari - ricardo.harari@gmail.com
     https://www.hackerrank.com/challenges/saveprincess
 
-
     c("bot_save_princess.ex")
     BotSavePrincess.run()
   """
